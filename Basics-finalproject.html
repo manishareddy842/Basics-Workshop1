@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitbowl</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: blue;
+    }
+    img{
+        display: block;
+        margin: 10px auto;
+        padding: 20px auto ;
+        margin: 20px auto;
+        border: 40pxauto;
+        border-radius: 20px;
+        width: 400px;
+    }
+    button{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 8px 6px 5px;
+        transition: 20ms;
+        
+    }
+    button:hover{
+        color: antiquewhite;
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+    p{
+        text-align: center;
+        font-weight: 100;
+    }
+    .fruit{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="fruit">
+    <h1>I love Fruit bowl as breakfast</h1>
+    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/exps4271_MC163887D03_24_4b.jpg"="bowl">
+    <p>
+    What's not to love about fruit? It's basically nature's candy—providing the 
+    perfect topper for your breakfast cereal,<br> a
+    convenient snack when you're on the run, and a healthy dessert you can feel good about eating. 
+    Whether you enjoy some<br>
+    sliced banana with your overnight oats or some berries in your Greek yogurt, <br>
+    you may be wondering how your habits affect
+    your health—and what happens to your body when you eat fruit is actually pretty amazing. <br>
+    As they say, an apple a day
+    keeps the doctor away, and there are definitely are a ton of perks to eating these foods. 
+    <br>
+    However, experts say the key
+    to reaping the benefits without any negative effects is heeding the old mantra "everything in moderation."
+    <a href="https://www.eatthis.com/what-happens-body-fruit/"; target="_blank"><strong>know more</strong></a>
+    </p>
+    <br>
+    <button>Different Bowl</button>
+    <script>
+        function toBe(){
+            let good=prompt("what fruits do you like?");
+            let nice =document.querySelector("h1");
+            if(good ==="Apple,garpes,limes,berries"){
+            nice.innerHTML= "you like" +" "+good;
+            }
+            else{
+            nice.innerHTML = "you don't like" +" "+ good;    
+            }
+        }
+        let apple= document.querySelector("button")
+apple.addEventListener("click", toBe)
+    </script>
+    </div>
+</body>
+</html>

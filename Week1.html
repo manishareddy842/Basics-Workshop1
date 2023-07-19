@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tobe{
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+h4{
+padding: 20px 20px 20px 20px;
+border-radius:20px 20px 20px 20px;
+border: 20px 20px 20px 20px;
+text-align: center;
+margin: 0 auto;
+max-width: 400px;
+}
+h4:hover{
+    background-color: bisque;
+}
+button{
+    border-radius:20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: blue;
+}
+h5{
+    text-align: center;
+}
+</style>
+</html>
+<body>
+
+<h1> 🌥
+    <div>Currently 21° in Tokyo</div>
+
+<div>13°/<span class="tobe">23°</span></div>
+</h1>
+<h4>🌧Tomorrow
+    <div>10°/<span class="tobe">22°</span></div>
+    </h4>
+<h4>🌥 saturday
+    <div>15°/<span class="tobe">17°</span></div>
+</h4>
+<h4> ☀ Sunday
+    <div>25°/<span class="tobe">28°</span></div>
+</h4>
+<button> changecity</button>
+<h5> Coded by ManishaReddy</h5>
+</ul>
+<script>
+
+function R()
+{
+let city = prompt("which city are you living in ?");
+let temperature = prompt("what is the current temperature?");
+let hello=document.querySelector("h1");
+hello.innerHTML="Currently" + temperature +"°"+ "in"+ city;
+    if (temperature < 0) {
+        hello.innerHTML = "😔<br>Currently" + temperature + "°C" + "in" + city;
+    }
+    else {
+        hello.innerHTML = "😊<br>Currently" + temperature + "°C" + "in" + city;
+    }
+}
+let week2 = document.querySelector("button");
+week2.addEventListener("click", R);
+
+</script>
+</body>
+</html>

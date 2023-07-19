@@ -1,0 +1,78 @@
+
+prompt("what is your homeTown?");
+    let firstName= prompt("what is your firstName?");
+    let lastName= prompt("what is your lastName?");
+    alert (firstName+lastName);	
+
+
+
+
+-------------------------------------------------------------------------------------
+ for if statements
+
+let age = prompt("how old are  you?");
+   if ( age < 18)
+   {
+       alert ("you cannot apply");
+   }
+   if (age>=18)
+   {
+       alert ("you can apply");
+   }
+----------------------------------------------------------------
+ let time = prompt("what is the current time?");
+    if ( time < 12){
+        alert ("Good morning");
+    }
+    if (time > 12 && time < 18 )
+    {
+        alert("Good afternoon");
+
+    }
+    if (time > 18)
+    {
+        alert("Good evening");
+    }
+----------------------------------------------------------------------
+let country = prompt("which country are you from ?");
+
+    if (country === "Brazil" || country === "portugal")
+    {
+        alert("you speak Portuguese");
+    }
+    else{
+        alert("you don't speak Portuguese");
+    }
+-------------------------------------------------------
+let country= prompt("which country are you from ?");
+    if (country===Brazil || country=== Portugal0)
+    {
+        alert("you speak portugese");
+    }
+    else{
+        alert(" Go learn Portugese");
+    }
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------
+if (temperature < 0) {
+    hello.innerHTML=" 😔"<br>+"Currently" + temperature + "°" + "in" + city;
+}
+else{
+   hello.innerHTML= "😊"<br>+"Currently" + temperature + "°" + "in" + city;
+}
+------------------------------------------------------------------------------
+if (temperature < 0) {
+          heading.innerHTML =
+            "☹️<br />Currently " + temperature + "°C in " + city;
+        } else {
+          heading.innerHTML =
+            "😄<br />Currently " + temperature + "°C in " + city;
+        }

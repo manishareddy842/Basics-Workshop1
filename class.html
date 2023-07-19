@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<title>shecodes </title>
+<style>
+    button{
+        display: block;
+        margin: 0 auto;
+    }
+    .free{
+        color:blue;
+    }
+    .courses{
+        color:red;
+        
+       
+    }
+    .stories{
+        color: green;
+        
+    }
+    h1 {
+        color: purple;
+        
+        text-align: center;
+    }
+    ul{
+       
+       text-align: center;
+        list-style: none;
+    
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    
+.coding-workshop{
+    text-align: center;
+    color: green;
+    text-decoration: underline ;
+}
+li{
+    display: inline;
+    margin:40px;
+}
+body{
+background-color:#f6f2fe;
+}
+
+</style>
+
+<body>
+<h1> Shecodes </h1>
+<h2 class =" coding-workshop"> 
+    Coding Workshop
+</h2>
+<ul>
+    <li> 
+     <a href = " https://www.shecodes.io/students" class=" free">
+         Coders
+        </a>
+    </li>
+    <li> 
+    <a href ="https://www.shecodes.io/Courses" class="courses"> 
+        Courses
+    </a>
+    </li>
+    <li>
+        <a href="https://www.shecodes.io/stories"  class=" stories">
+            Stories
+        </a>
+    </li>
+    <hr>
+    <h2> More info</h2>
+</ul>
+<button> Apply now</button>
+<script>
+    function canSpeakPortugese(){
+    let country= prompt("which country are you from ?");
+    if (country==="Brazil" || country=== "Portugal")
+    {
+        alert("you speak portugese");
+    }
+    else{
+        alert(" Go learn Portugese");
+    }
+}
+canSpeakPortugese();
+</script>
+</body>
+</html>
